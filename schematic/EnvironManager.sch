@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+LIBS:EnvironManager-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R2
+U 1 1 5CEC4941
+P 1950 3700
+F 0 "R2" V 1745 3700 50  0000 C CNN
+F 1 "330" V 1836 3700 50  0000 C CNN
+F 2 "" V 1990 3690 50  0001 C CNN
+F 3 "~" H 1950 3700 50  0001 C CNN
+	1    1950 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor:DHT11 U1
+U 1 1 5CEC6153
+P 1850 2350
+F 0 "U1" H 1606 2396 50  0000 R CNN
+F 1 "DHT22" H 1606 2305 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 1850 1950 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 2000 2600 50  0001 C CNN
+	1    1850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5CECCEFE
+P 2500 2150
+F 0 "R1" V 2295 2150 50  0000 C CNN
+F 1 "10k" V 2386 2150 50  0000 C CNN
+F 2 "" V 2540 2140 50  0001 C CNN
+F 3 "~" H 2500 2150 50  0001 C CNN
+	1    2500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CEDD17D
+P 1850 3000
+F 0 "#PWR?" H 1850 2750 50  0001 C CNN
+F 1 "GND" H 1855 2827 50  0000 C CNN
+F 2 "" H 1850 3000 50  0001 C CNN
+F 3 "" H 1850 3000 50  0001 C CNN
+	1    1850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CEE3668
+P 1850 1800
+F 0 "#PWR?" H 1850 1650 50  0001 C CNN
+F 1 "+5V" H 1865 1973 50  0000 C CNN
+F 2 "" H 1850 1800 50  0001 C CNN
+F 3 "" H 1850 1800 50  0001 C CNN
+	1    1850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5CEE6908
+P 5500 2000
+F 0 "#PWR?" H 5500 1850 50  0001 C CNN
+F 1 "+12V" H 5515 2173 50  0000 C CNN
+F 2 "" H 5500 2000 50  0001 C CNN
+F 3 "" H 5500 2000 50  0001 C CNN
+	1    5500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CEC54A7
+P 1550 3700
+F 0 "D1" H 1543 3916 50  0000 C CNN
+F 1 "LED" H 1543 3825 50  0000 C CNN
+F 2 "" H 1550 3700 50  0001 C CNN
+F 3 "~" H 1550 3700 50  0001 C CNN
+	1    1550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5CEF1F7B
+P 4950 2950
+F 0 "R3" V 4745 2950 50  0000 C CNN
+F 1 "1k" V 4836 2950 50  0000 C CNN
+F 2 "" V 4990 2940 50  0001 C CNN
+F 3 "~" H 4950 2950 50  0001 C CNN
+	1    4950 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2950 5200 2950
+Wire Wire Line
+	5500 3150 5500 3350
+$Comp
+L Device:R_US R4
+U 1 1 5CF28A0D
+P 4950 2600
+F 0 "R4" H 4882 2554 50  0000 R CNN
+F 1 "1k" H 4882 2645 50  0000 R CNN
+F 2 "" V 4990 2590 50  0001 C CNN
+F 3 "~" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2600 5950 2600
+Wire Wire Line
+	5500 2200 6250 2200
+Wire Wire Line
+	6250 2200 6250 2400
+Connection ~ 5500 2200
+Wire Wire Line
+	5500 2200 5500 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5CF39746
+P 6250 3850
+F 0 "#PWR?" H 6250 3600 50  0001 C CNN
+F 1 "GND" H 6255 3677 50  0000 C CNN
+F 2 "" H 6250 3850 50  0001 C CNN
+F 3 "" H 6250 3850 50  0001 C CNN
+	1    6250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Heater L2
+U 1 1 5CF3974D
+P 6250 3150
+F 0 "L2" H 6320 3196 50  0000 L CNN
+F 1 "Load Heat" H 6320 3105 50  0000 L CNN
+F 2 "" V 6180 3150 50  0001 C CNN
+F 3 "~" H 6250 3150 50  0001 C CNN
+	1    6250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2800 6250 3000
+Wire Wire Line
+	6250 3300 6250 3850
+Wire Wire Line
+	2150 2350 2500 2350
+Wire Wire Line
+	1850 1800 1850 1950
+Wire Wire Line
+	2500 2350 2500 2300
+Connection ~ 2500 2350
+Wire Wire Line
+	2500 2350 2850 2350
+Wire Wire Line
+	2500 2000 2500 1950
+Wire Wire Line
+	2500 1950 1850 1950
+Connection ~ 1850 1950
+Wire Wire Line
+	1850 1950 1850 2050
+$Comp
+L Device:R_US R5
+U 1 1 5CF410B6
+P 2250 1400
+F 0 "R5" H 2318 1446 50  0000 L CNN
+F 1 "1k" H 2318 1355 50  0000 L CNN
+F 2 "" V 2290 1390 50  0001 C CNN
+F 3 "~" H 2250 1400 50  0001 C CNN
+	1    2250 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Heater L1
+U 1 1 5CF00575
+P 5500 3500
+F 0 "L1" H 5570 3546 50  0000 L CNN
+F 1 "Load Humidifier" H 5570 3455 50  0000 L CNN
+F 2 "" V 5430 3500 50  0001 C CNN
+F 3 "~" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3650 5500 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5CEE7C40
+P 5500 3850
+F 0 "#PWR?" H 5500 3600 50  0001 C CNN
+F 1 "GND" H 5505 3677 50  0000 C CNN
+F 2 "" H 5500 3850 50  0001 C CNN
+F 3 "" H 5500 3850 50  0001 C CNN
+	1    5500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Heater L3
+U 1 1 5CF4A6FF
+P 1050 1900
+F 0 "L3" H 1120 1946 50  0000 L CNN
+F 1 "Load Lighting" H 1120 1855 50  0000 L CNN
+F 2 "" V 980 1900 50  0001 C CNN
+F 3 "~" H 1050 1900 50  0001 C CNN
+	1    1050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2050 1050 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5CF4A706
+P 1050 2250
+F 0 "#PWR?" H 1050 2000 50  0001 C CNN
+F 1 "GND" H 1055 2077 50  0000 C CNN
+F 2 "" H 1050 2250 50  0001 C CNN
+F 3 "" H 1050 2250 50  0001 C CNN
+	1    1050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1750 2650 1750
+Wire Wire Line
+	2650 1750 2650 1400
+Wire Wire Line
+	2650 1400 2400 1400
+Wire Wire Line
+	1050 1600 1050 1750
+$Comp
+L power:+12V #PWR?
+U 1 1 5CF4DC1B
+P 1050 1000
+F 0 "#PWR?" H 1050 850 50  0001 C CNN
+F 1 "+12V" H 1065 1173 50  0000 C CNN
+F 2 "" H 1050 1000 50  0001 C CNN
+F 3 "" H 1050 1000 50  0001 C CNN
+	1    1050 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2000 5500 2200
+Wire Wire Line
+	1050 1000 1050 1200
+Wire Wire Line
+	1350 1400 2100 1400
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5CEC1ABA
+P 3650 2150
+F 0 "J1" H 3650 3631 50  0000 C CNN
+F 1 "Raspberry Pi Zero W" H 3650 3540 50  0000 C CNN
+F 2 "" H 3650 2150 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3650 2150 50  0001 C CNN
+	1    3650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2600 4800 2600
+$Comp
+L Transistor_BJT:TIP120 Q1
+U 1 1 5CFF1DA4
+P 5400 2950
+F 0 "Q1" H 5607 2996 50  0000 L CNN
+F 1 "TIP120" H 5607 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5600 2875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 5400 2950 50  0001 L CNN
+	1    5400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:TIP120 Q2
+U 1 1 5CFF580E
+P 6150 2600
+F 0 "Q2" H 6357 2646 50  0000 L CNN
+F 1 "TIP120" H 6357 2555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6350 2525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 6150 2600 50  0001 L CNN
+	1    6150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:TIP120 Q3
+U 1 1 5CFF70F2
+P 1150 1400
+F 0 "Q3" H 1357 1354 50  0000 L CNN
+F 1 "TIP120" H 1357 1445 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1350 1325 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 1150 1400 50  0001 L CNN
+	1    1150 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5CFFD7F2
+P 2400 3600
+F 0 "Q?" V 2635 3600 50  0000 C CNN
+F 1 "Q_NPN_BCE" V 2726 3600 50  0000 C CNN
+F 2 "" H 2600 3700 50  0001 C CNN
+F 3 "~" H 2400 3600 50  0001 C CNN
+	1    2400 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 5D00B9D7
+P 2400 3100
+F 0 "R6" H 2468 3146 50  0000 L CNN
+F 1 "1k" H 2468 3055 50  0000 L CNN
+F 2 "" V 2440 3090 50  0001 C CNN
+F 3 "~" H 2400 3100 50  0001 C CNN
+	1    2400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2650 1850 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5D018B0C
+P 1250 3800
+F 0 "#PWR?" H 1250 3550 50  0001 C CNN
+F 1 "GND" H 1255 3627 50  0000 C CNN
+F 2 "" H 1250 3800 50  0001 C CNN
+F 3 "" H 1250 3800 50  0001 C CNN
+	1    1250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D01AB16
+P 2700 3550
+F 0 "#PWR?" H 2700 3400 50  0001 C CNN
+F 1 "+5V" H 2715 3723 50  0000 C CNN
+F 2 "" H 2700 3550 50  0001 C CNN
+F 3 "" H 2700 3550 50  0001 C CNN
+	1    2700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3550 2700 3700
+Wire Wire Line
+	2400 2850 2400 2950
+Wire Wire Line
+	2400 2850 2850 2850
+Wire Wire Line
+	2400 3250 2400 3400
+Wire Wire Line
+	2700 3700 2600 3700
+Wire Wire Line
+	2200 3700 2100 3700
+Wire Wire Line
+	1700 3700 1800 3700
+Wire Wire Line
+	1400 3700 1250 3700
+Wire Wire Line
+	1250 3700 1250 3800
+Wire Wire Line
+	4450 2850 4600 2850
+Wire Wire Line
+	4600 2850 4600 2600
+Wire Wire Line
+	4450 2950 4800 2950
+$EndSCHEMATC
