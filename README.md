@@ -54,7 +54,7 @@ See: https://github.com/LinkedMink/environ-manager-server
 ### Wire Hardware
 See the schematic. It's pretty general, and the components can be swapped out as needed.
 
-![Wiring Schematic](https://github.com/LinkedMink/environ-manager-hw-rpi/tree/master/schematic/SchematicExport.png "Wiring Schematic")
+![Wiring Schematic](https://github.com/LinkedMink/environ-manager-hw-rpi/raw/master/schematic/SchematicExport.png "Wiring Schematic")
 
 #### Component List
 - Raspberry Pi
